@@ -1,0 +1,6 @@
+#!/bin/sh
+num=1
+for file in *.JPG; do
+       mv "$file" "$(printf "%u" $num).jpg"
+       let num=$num+1
+done
